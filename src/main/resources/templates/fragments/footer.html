@@ -4,7 +4,6 @@
     <div class="d-flex justify-content-center">
       <ul class="list-unstyled d-flex">
         <li><a class="footer-link px-2" id="licenses" target="_blank" th:href="@{'/licenses'}" th:text="#{licenses.nav}">Licenses</a></li>
-        <li><a class="footer-link px-2" id="survey" target="_blank" href="https://stirlingpdf.info/s/clwzgtfw7000gltkmwz1n212m" th:text="#{survey.nav}">Survey</a></li>
         <li th:if="${@privacyPolicy != ''}"><a class="footer-link px-2" target="_blank" th:href="${@privacyPolicy}" th:text="#{legal.privacy}">privacyPolicy</a></li>
         <li th:if="${@termsAndConditions != ''}"><a class="footer-link px-2" target="_blank" th:href="${@termsAndConditions}" th:text="#{legal.terms}">termsAndConditions</a></li>
         <li th:if="${@accessibilityStatement != ''}"><a class="footer-link px-2" target="_blank" th:href="${@accessibilityStatement}" th:text="#{legal.accessibility}">accessibilityStatement</a></li>
@@ -15,8 +14,7 @@
 
     <!-- powered by section -->
     <div class="footer-powered-by">
-	  <span th:text="#{poweredBy}"></span>
-	  <a href="https://stirlingpdf.com" class="stirling-link">Stirling PDF</a>
+	  <a href="https://taohansen.com.br" class="stirling-link">2024 Tao Hansen</a>
 	</div>
   </div>
 </footer>

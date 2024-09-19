@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const dropdownLangExists = document.querySelector(`.lang_dropdown-item[data-language-code="${browserLang}"]`);
 
   // Set the default language to browser's language or 'en_GB' if not found in the dropdown
-  const defaultLocale = dropdownLangExists ? browserLang : "en_GB";
+  const defaultLocale = dropdownLangExists ? browserLang : "pt_BR";
   const storedLocale = localStorage.getItem("languageCode") || defaultLocale;
 
   const dropdownItems = document.querySelectorAll(".lang_dropdown-item");
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function setLanguageForDropdown(dropdownClass) {
-  const defaultLocale = document.documentElement.getAttribute("data-language") || "en_GB";
+  const defaultLocale = document.documentElement.getAttribute("data-language") || "pt_BR";
   const storedLocale = localStorage.getItem("languageCode") || defaultLocale;
   const dropdownItems = document.querySelectorAll(dropdownClass);
 

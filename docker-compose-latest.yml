@@ -1,7 +1,8 @@
 services:
   stirling-pdf:
-    container_name: Stirling-PDF
-    image: frooodle/s-pdf:latest
+    container_name: Tao-PDF
+    build: .
+    image: taohans/taopdf
     deploy:
       resources:
         limits:
@@ -20,11 +21,8 @@ services:
     environment:
       DOCKER_ENABLE_SECURITY: "false"
       SECURITY_ENABLELOGIN: "false"
-      LANGS: "en_GB,en_US,ar_AR,de_DE,fr_FR,es_ES,zh_CN,zh_TW,ca_CA,it_IT,sv_SE,pl_PL,ro_RO,ko_KR,pt_BR,ru_RU,el_GR,hi_IN,hu_HU,tr_TR,id_ID"
-      SYSTEM_DEFAULTLOCALE: en-US
-      UI_APPNAME: Stirling-PDF
-      UI_HOMEDESCRIPTION: Demo site for Stirling-PDF Latest
-      UI_APPNAMENAVBAR: Stirling-PDF Latest
+      LANGS: "en_US,pt_BR"
+      SYSTEM_DEFAULTLOCALE: pt-BR
       SYSTEM_MAXFILESIZE: "100"
       METRICS_ENABLED: "true"
       SYSTEM_GOOGLEVISIBILITY: "true"
